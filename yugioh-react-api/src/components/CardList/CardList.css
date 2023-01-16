@@ -5,13 +5,13 @@
 }
 
 @media (max-width: 1220px) {
-  .xmenList {
+  .cardList {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 840px) {
-  .xmenList {
+  .cardList {
     grid-template-columns: 1fr;
   }
 }
