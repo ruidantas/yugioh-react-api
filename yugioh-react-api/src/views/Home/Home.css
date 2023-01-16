@@ -1,0 +1,15 @@
+.Home__container {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+
+  position: relative;
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #ffffff 100%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
