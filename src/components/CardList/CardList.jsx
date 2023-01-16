@@ -19,7 +19,7 @@ function Card ({ createNewCard }) {
   const [cardUnique, setCardUnique] = useState({});
   const [cardEdited, setCardEdited] = useState(false);
   const [cardUpdate, setCardUpdate] = useState([]);
-  const [itensPage, setItensPage] = useState(8);
+  const [itensPage] = useState(8);
   const [correntPage, setCorrentPage] = useState(0);
 
   const pages = Math.ceil(cards.length / itensPage);
@@ -50,6 +50,7 @@ function Card ({ createNewCard }) {
         setCard(card);
       }
       modalState();
+      return
     });
   };
 
@@ -89,6 +90,7 @@ function Card ({ createNewCard }) {
         card.splice(index, 1, cardEdt);
       }
       modalState();
+      return
     });
 
     customStyle = {
@@ -352,7 +354,7 @@ function Card ({ createNewCard }) {
                     </h2>
                     <h2 className="modal-info">Effect: {cardUnique.effect}</h2>
                     <div className="img-flex">
-                      <img className="imageModal" src={cardUnique.image} />
+                      <img className="imageModal" src={cardUnique.image}  alt="imagem"/>
                     </div>
                     <div className="div-atk-def">
                       <h2 className="modal-info">ATK: {cardUnique.atk}</h2>

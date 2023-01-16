@@ -8,7 +8,7 @@ function CardData({ typing, level, category, atributte, effect, image, atk, def 
       <div className="modal-info">{category}</div>
       <div className="modal-info">{atributte}</div>
       <div className="modal-info">{effect}</div>
-      <img className="modal-info" src={image} />
+      <img className="modal-info" src={image} alt="imagem" />
       <div className="modal-info">{atk}</div>
       <div className="modal-info">{def}</div>
 
