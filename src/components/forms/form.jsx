@@ -9,7 +9,17 @@ export function FormCreate({ closeModal, createCard }) {
     event.preventDefault();
 
     const renameImage = (img) => img.split("\\").pop();
-    const { name, typing, level, category, atributte, effect, image, atk, def } = newCard;
+    const {
+      name,
+      typing,
+      level,
+      category,
+      atributte,
+      effect,
+      image,
+      atk,
+      def,
+    } = newCard;
 
     const card = {
       name,
@@ -20,8 +30,8 @@ export function FormCreate({ closeModal, createCard }) {
       effect,
       image: `${renameImage(image)}`,
       atk,
-      def
-    };  
+      def,
+    };
 
     const response = await api.createNewCard(card);
     createCard(response);
@@ -31,8 +41,9 @@ export function FormCreate({ closeModal, createCard }) {
   return (
     <div className="form">
       <form autoComplete="off" onSubmit={formsSubmit} className="form__card">
-        <section>
+        <section className="section__form">
           <span>Name: </span>
+
           <input
             type="text"
             name="name"
@@ -43,8 +54,9 @@ export function FormCreate({ closeModal, createCard }) {
           ></input>
         </section>
 
-        <section>
+        <section className="section__form">
           <span>Typing: </span>
+
           <input
             type="text"
             name="name"
@@ -55,8 +67,9 @@ export function FormCreate({ closeModal, createCard }) {
           ></input>
         </section>
 
-        <section>
+        <section className="section__form">
           <span>Level: </span>
+
           <input
             type="number"
             name="level"
@@ -67,8 +80,9 @@ export function FormCreate({ closeModal, createCard }) {
           ></input>
         </section>
 
-        <section>
+        <section className="section__form">
           <span>Category: </span>
+
           <input
             type="text"
             name="category"
@@ -78,8 +92,10 @@ export function FormCreate({ closeModal, createCard }) {
             }}
           ></input>
         </section>
-        <section>
+
+        <section className="section__form">
           <span>Atributte: </span>
+
           <input
             type="text"
             name="category"
@@ -90,8 +106,9 @@ export function FormCreate({ closeModal, createCard }) {
           ></input>
         </section>
 
-        <section>
+        <section className="section__form">
           <span>Effect: </span>
+
           <input
             type="text"
             name="category"
@@ -102,8 +119,9 @@ export function FormCreate({ closeModal, createCard }) {
           ></input>
         </section>
 
-        <section>
+        <section className="section__form">
           <span>Image: </span>
+
           <input
             type="link"
             accept="image/png, image/jpeg, image/jpg, image/gif, image/webp"
@@ -117,8 +135,9 @@ export function FormCreate({ closeModal, createCard }) {
           ></input>
         </section>
 
-        <section>
+        <section className="section__form">
           <span>ATK: </span>
+
           <input
             type="text"
             name="category"
@@ -129,8 +148,9 @@ export function FormCreate({ closeModal, createCard }) {
           ></input>
         </section>
 
-        <section>
+        <section className="section__form">
           <span>DEF: </span>
+
           <input
             type="text"
             name="category"
@@ -140,7 +160,6 @@ export function FormCreate({ closeModal, createCard }) {
             }}
           ></input>
         </section>
-
 
         <button type="submit" className="submit">
           Enviar
