@@ -18,7 +18,7 @@ export function FormCreate({ closeModal, createCard }) {
       category,
       atributte,
       effect,
-      image: `assets/images/${renameImage(image)}`,
+      image: `${renameImage(image)}`,
       atk,
       def
     };  
@@ -105,7 +105,7 @@ export function FormCreate({ closeModal, createCard }) {
         <section>
           <span>Image: </span>
           <input
-            type="file"
+            type="link"
             accept="image/png, image/jpeg, image/jpg, image/gif, image/webp"
             alt="image"
             onChange={(event) => {
