@@ -27,7 +27,7 @@
   position: fixed;
   z-index: 99999;
   height: auto;
-  min-height: 750px;
+  min-height: 720px;
   max-height: 800px;
   min-width: 500px;
   max-width: 900px;
@@ -38,6 +38,15 @@
   backdrop-filter: blur(15px);
   left: 33%;
   top: 7%;
+}
+
+.form__cardlist{
+  background-color: #ccc;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
 }
 
 @media (max-width: 1220px) {

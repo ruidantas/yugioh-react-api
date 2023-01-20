@@ -188,7 +188,7 @@ function Card ({ createNewCard }) {
                     onSubmit={cardUpdat}
                     className="forms__Update"
                   >
-                    <section>
+                    <section className="form__cardlist">
                       <span>Name: </span>
                       <input
                         type="text"
@@ -203,10 +203,10 @@ function Card ({ createNewCard }) {
                       ></input>
                     </section>
 
-                    <section>
-                      <span>Image: </span>
+                    <section  className="form__cardlist">
+                      <span>Image Link:</span>
                       <input
-                        type="file"
+                        type="link"
                         accept="image/jpeg, image/jpg, image/gig, image/png, image/webp"
                         alt="image"
                         required
@@ -219,7 +219,7 @@ function Card ({ createNewCard }) {
                       ></input>
                     </section>
 
-                    <section>
+                    <section  className="form__cardlist">
                       <span>Typing: </span>
                       <input
                         type="text"
@@ -234,7 +234,7 @@ function Card ({ createNewCard }) {
                       ></input>
                     </section>
 
-                    <section>
+                    <section  className="form__cardlist">
                       <span>Category: </span>
                       <input
                         type="text"
@@ -249,7 +249,7 @@ function Card ({ createNewCard }) {
                       ></input>
                     </section>
 
-                    <section>
+                    <section  className="form__cardlist">
                       <span>Level: </span>
                       <input
                         type="text"
@@ -264,7 +264,7 @@ function Card ({ createNewCard }) {
                       ></input>
                     </section>
 
-                    <section>
+                    <section  className="form__cardlist">
                       <span>Atributte: </span>
                       <input
                         type="text"
@@ -280,7 +280,7 @@ function Card ({ createNewCard }) {
                     </section>
 
 
-                    <section>
+                    <section  className="form__cardlist">
                       <span>Effect: </span>
                       <input
                         type="text"
@@ -295,7 +295,7 @@ function Card ({ createNewCard }) {
                       ></input>
                     </section>
 
-                    <section>
+                    <section  className="form__cardlist">
                       <span>ATK: </span>
                       <input
                         type="text"
@@ -310,7 +310,7 @@ function Card ({ createNewCard }) {
                       ></input>
                     </section>
 
-                    <section>
+                    <section  className="form__cardlist">
                       <span>DEF: </span>
                       <input
                         type="text"
